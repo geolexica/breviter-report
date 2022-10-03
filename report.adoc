@@ -549,3 +549,7 @@ described.
 
 * https://github.com/geolexica/breviter-compare[Breviter test report generation]
 
+
+NOTE: Images used in this report are located here:
+https://lucid.app/lucidchart/88c4685c-b4ce-4438-93cb-19b47a8a81f1/
+
