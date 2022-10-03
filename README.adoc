@@ -6,12 +6,16 @@ The implementation of Breviter is supported by NLNet funding for the
 "Geolexica Reverse Semantic Search" project.
 
 
-== Implemented deliverables
+== Deliverables
 
-* link:report[Breviter implementation report]
+ifdef::env-github[]
+include::report.adoc[Breviter implementation report]
+endif::[]
 
-* https://github.com/geolexica/breviter[Implementation of Breviter TS/JS]
+ifndef::env-github[]
+* link:report.adoc[Breviter implementation report]
+endif::[]
+
+* https://github.com/geolexica/breviter[Breviter (implementation)]
 
 * https://github.com/geolexica/breviter-compare[Breviter test report generation]
-
-

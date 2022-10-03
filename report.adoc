@@ -541,3 +541,11 @@ community.
 In the future, the team aims to extend the Breviter approach on English to
 other languages, such as French or Arabic, where BERT approaches are well
 described.
+
+
+== References
+
+* https://github.com/geolexica/breviter[Breviter (implementation)]
+
+* https://github.com/geolexica/breviter-compare[Breviter test report generation]
+
