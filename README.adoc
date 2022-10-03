@@ -1,0 +1,17 @@
+= Implementation report of Geolexica Breviter
+
+== General
+
+The implementation of Breviter is supported by NLNet funding for the
+"Geolexica Reverse Semantic Search" project.
+
+
+== Implemented deliverables
+
+* link:report[Breviter implementation report]
+
+* https://github.com/geolexica/breviter[Implementation of Breviter TS/JS]
+
+* https://github.com/geolexica/breviter-compare[Breviter test report generation]
+
+
