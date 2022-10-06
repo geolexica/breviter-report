@@ -377,7 +377,11 @@ rank range, multiplied by the corresponding score:
 * B, *rank 2-3:*  score 10
 * C, *rank 4-5:*  score 5
 * D, *rank 6-10:*  score 3
-* E, *rank 11+:*  score 1
+* E, *all other ranks:*  score 1
+
+NOTE: Due to implementation limitation,
+rank -1 (negative one) is assigned to inputs that are not included in the
+returned search results.
 
 [source]
 ----
@@ -552,4 +556,3 @@ described.
 
 NOTE: Images used in this report are located here:
 https://lucid.app/lucidchart/88c4685c-b4ce-4438-93cb-19b47a8a81f1/
-
