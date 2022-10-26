@@ -541,32 +541,30 @@ For
 
 ==== Dataset 2 (synthetic dataset)
 
-TODO: Jeffrey.
-
 Fit score for Breviter:
 
-* "Score_BR = (20 × 1178 + 10 × 53 + 5 × 1 + 1 × 64) / 25920 = 0.9320601851851852"
+* "Score_BR = (20×648 + 10×183 + 5×64 + 3×110 + 1×77 + -1×220) / 26040 = 0.587442396313364"
 
 Fit score for keyword search:
 
-* "Score_KS = ..."
+* "Score_KS = (20×763 + 10×179 + 5×48 + 3×63 + 1×57 + -1×192) / 26040 = 0.6660522273425499"
 
 Improvement:
 
-* stem:[(Score_BR - Score_KS) / Score_BR * 100% = ...%]
+* stem:[(Score_BR - Score_KS) / Score_KS * 100% = -12%]
 
 [cols="a,a,a",options="header"]
 |===
 | 2+| Results
 | Rank | Semantic search | Keyword search
-| A | 35 | 21
-| B | 23 | 17
-| C | 16 | 7
-| D | 12 | 17
-| E | 3  | 9
-| F | 17 | 35
+| A | 648 | 763
+| B | 189 | 179
+| C | 71 | 48
+| D | 90 | 63
+| E | 70  | 57
+| F | 278 | 192
 |   |    |
-| Total | 106 | 106
+| Total | 1302 | 1302
 |===
 
 
@@ -576,7 +574,7 @@ Improvement:
 
 From the results of testing against both dataset 1 and dataset 2, it is shown
 that the Breviter reverse semantic search approach delivers exceptionally better
-results in most scenarios:
+results with the real-life dataset (41% improvement):
 
 * where the search query contains similar but not identical keywords to those
 used in the definition
@@ -584,9 +582,13 @@ used in the definition
 * where the ranked results of a keyword search were ranked too low due to
 keyword mismatches
 
-On the other hand, there are certain improvements that could potentially be made
-for the Breviter approach. More specifically, the tuning can happen on the
-machine-learning models used by Breviter.
+On the other hand, with a synthetic dataset that has the search query that uses
+very similar keywords with what is provided in the definition, the traditional
+keyword search may provide better results (17% degradation).
+
+There are certain improvements that could potentially be made for the Breviter
+approach. More specifically, the tuning can happen on the machine-learning
+models used by Breviter.
 
 Some areas for potential improvement are provided below.
 
